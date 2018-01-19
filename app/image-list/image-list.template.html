@@ -1,0 +1,7 @@
+<div ng-repeat="d in $ctrl.src" class="simleImagePlate">
+    <a href="{{d.link}}">
+        <img ng-src="{{d.images[0].link}}"></img>
+        </a><br>
+    <description>{{d.title}}</description>
+    <date>{{d.datetime | date:'medium'}}</date>
+</div>
