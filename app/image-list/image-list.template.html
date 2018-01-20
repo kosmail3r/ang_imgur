@@ -1,26 +1,28 @@
 <div class="container-fluid">
+    <div class="col-sm-12">
         <div ng-repeat="d in $ctrl.src" >
-             <div class="col-sm-3">
-            <!--Card-->
-                <div class="card"  id="sizeBlock">
-                <!--Card image-->
-                  <a href="{{d.link}}">
-                    <img ng-src="{{d.images[0].link || d.link}}" id="sizeImg"></img>
-                     </a>
-                <!--Card content-->
-                  <div class="card-block">
-                    <!--Title-->
-                    <h4 class="card-title" id="textSize"><description>{{d.title}}</description></h4>
-                    <!--Text-->
-                    <p class="card-text">
-                        <date>{{d.datetime | date:'medium'}}</date>
-                    </p>
-                    <a href="#" class="btn btn-primary">кнопка</a>
-                  </div>
+                <div class="col-sm-3">
+                    <!--Card-->
+                    <div class="card"  id="sizeBlock">
+                        <!--Card image-->
+                        <a href="{{d.link}}">
+                            <img ng-src="{{d.images[0].link || d.link}}" id="sizeImg"></img>
+                        </a>
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--Title-->
+                            <h4 class="card-title" id="textSize"><description>{{d.title}}</description></h4>
+                            <!--Text-->
+                            <p class="card-text">
+                                <date>{{d.datetime | date:'medium'}}</date>
+                            </p>
+                            <a href="#" class="btn btn-primary">кнопка</a>
+                        </div>
+                    </div>
+                    <!--/.Card-->
                 </div>
-            <!--/.Card-->
-             </div>
         </div>
+    </div>
 </div>
 
 
