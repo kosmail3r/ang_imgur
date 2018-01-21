@@ -1,15 +1,22 @@
-#sizeBlock{
-    height: 400px;
+.imgPad {
+    height:500px;
 }
 
+.imgPad .textBlock {
+    position: absolute;
+    bottom: 20px;
+}
 #sizeImg{
-    max-width: 300px;
+    display: block;
+    margin: auto auto;
+    max-width: 400px;
     max-height: 300px;
 }
 
 #textSize {
     white-space: nowrap; /* Отменяем перенос текста */
     overflow: hidden; /* Обрезаем содержимое */
+    width: 340px;
     padding: 5px; /* Поля */
     text-overflow: ellipsis; /* Многоточие */
 }
