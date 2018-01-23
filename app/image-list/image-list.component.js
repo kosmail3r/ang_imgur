@@ -11,8 +11,11 @@ angular
 
                         $http.get('https://api.imgur.com/3/gallery/hot/viral/0.json')
                         .then(result => {
-                            this.src = result.data.data;
+                            this.items = result.data.data;
                         });
+                    }
                 }
-            }
-    });
+        }
+    );
+
+

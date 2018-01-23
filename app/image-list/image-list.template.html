@@ -1,29 +1,19 @@
 <div class="container-fluid">
-    <div ng-repeat="d in $ctrl.src" >
+    <div ng-repeat="item in $ctrl.items">
         <div class="col-lg-4 col-md-6 col-sm-12 imgPad alert alert-success">
                     <!--Card image-->
-                    <a href="{{d.link}}" >
-                        <img ng-src="{{d.images[0].link || d.link}}" id="sizeImg"></img>
+                    <a href="{{item.link}}" >
+                        <img ng-src="{{item.images[0].link || item.link}}" id="sizeImg"></img>
                     </a>
                     <!--Card content-->
                     <div class="card-block textBlock">
                         <!--Title-->
-                        <h4 class="card-title" id="textSize"><description>{{d.title}}</description></h4>
+                        <h4 class="card-title" id="textSize"><description>{{item.title}}</description></h4>
                         <!--Text-->
                         <p class="card-text">
-                            <date>{{d.datetime | date:'medium'}}</date>
+                            <date>{{item.datetime | date:'medium'}}</date>
                         </p>
                     </div>
-            </div>
         </div>
+    </div>
 </div>
-
-
-
-<!--<div ng-repeat="d in $ctrl.src" class="simleImagePlate">-->
-    <!--<a href="{{d.link}}">-->
-        <!--<img ng-src="{{d.images[0].link}}"></img>-->
-    <!--</a><br>-->
-    <!--<description>{{d.title}}</description>-->
-    <!--<date>{{d.datetime | date:'medium'}}</date>-->
-<!--</div>-->
